@@ -18,7 +18,7 @@ def draw_matching(edges, matching, cover):
         else:
             edge_colors.append('lightblue')
             
-            
+    axes[0].set_title("Maximal Matching")
     nx.draw(G, edge_color=edge_colors, with_labels=True, ax=axes[0])
     node_colors = []
     for i in G.nodes():
@@ -27,7 +27,9 @@ def draw_matching(edges, matching, cover):
         else:
             node_colors.append('lightblue')
 
+    axes[1].set_title("Computed Vertex Cover")
     nx.draw(G, node_color=node_colors, with_labels=True, ax=axes[1])
+    plt.title("Matching and Vertex Cover Visulisation")
     plt.show()
     plt.savefig(f"graphpic{len(edges)}")
     plt.close()
