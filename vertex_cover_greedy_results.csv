@@ -1,5 +1,4 @@
 n,m,size_of_vc,size_of_matching,approximation_factor,running_time
-10,10,8,4,2,2.0398e-05
 10,15,6,3,2,1.9617e-05
 10,20,8,4,2,1.576e-05
 10,25,8,4,2,2.6339e-05
